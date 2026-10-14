@@ -1,13 +1,9 @@
-# CEFET-MG — Mostra de Cursos
+# SAVOT - Sistema de Analise Vocacional Técnica
 
 Aplicação Django leve para apresentar os cursos técnicos de Informática,
 Edificações e Mecatrônica do CEFET-MG Campus Varginha.
 
-## O que foi deixado mais leve
-
-A versão anterior usava LangChain, FAISS, sentence-transformers e PyTorch.
-Isso podia instalar bibliotecas de IA/CUDA muito pesadas para uma instância
-gratuita do Render.
+## Tecnologias
 
 Esta versão usa somente:
 - Django;
@@ -33,9 +29,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-## Variáveis de ambiente
-
-Crie um `.env` local a partir de `.env.example`:
+## Variáveis de ambiente (para funcionar o chatbot)
 
 ```env
 GROQ_API_KEY=sua_chave
@@ -44,7 +38,7 @@ GA_MEASUREMENT_ID=G-XXXXXXXXXX
 DEBUG=False
 ```
 
-## Google Analytics 4
+## Google Analytics 4 ( funcionando )
 
 O site já possui o código do GA4 no `base.html`.
 Basta colocar o ID de medição em `GA_MEASUREMENT_ID`.
@@ -62,7 +56,7 @@ Relatórios/Engajamento/Eventos. Para usar `curso` e `resultado` como
 dimensões personalizadas em relatórios, cadastre-os como dimensões
 personalizadas na interface do GA4.
 
-## Render
+## Render ( configurado )
 
 Build Command:
 
