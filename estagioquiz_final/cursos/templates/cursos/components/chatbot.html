@@ -1,0 +1,16 @@
+{% load static %}
+<section class="chatbot" id="chatbot" aria-label="Assistente virtual do SAVOT">
+  <h2>Tire suas dúvidas</h2>
+  <div class="chatbot-janela" data-endpoint="{% url 'chatbot_conversar' %}">
+    <div class="chatbot-mensagens" id="chatbot-mensagens" role="log" aria-live="polite">
+      <div class="chatbot-mensagem chatbot-mensagem--bot">Olá! Pergunte sobre cursos e processos seletivos do CEFET-MG. Vou priorizar fontes oficiais e mostrar os links consultados.</div>
+    </div>
+    <form class="chatbot-form" id="chatbot-form">
+      {% csrf_token %}
+      <input class="chatbot-input" id="chatbot-input" type="text" maxlength="400" required placeholder="Digite sua pergunta..." aria-label="Pergunta para o chatbot">
+      <button class="chatbot-botao" id="chatbot-enviar" type="submit">Enviar</button>
+    </form>
+    <p class="chatbot-aviso">As respostas podem conter erros. Confira datas e editais nas fontes oficiais.</p>
+  </div>
+</section>
+<script src="{% static 'cursos/js/chatbot.js' %}" defer></script>
