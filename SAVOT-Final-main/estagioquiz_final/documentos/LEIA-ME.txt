@@ -1,3 +1,0 @@
-Adicione documentos oficiais em TXT UTF-8 ou PDF com texto selecionável nesta pasta.
-Alterações são detectadas automaticamente. PDFs escaneados precisam de OCR.
-Não adicione exemplos ou instruções de uso à base. A consulta web utiliza publicações do campus e a página do processo técnico do próximo ano na Copeve.
